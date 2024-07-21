@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 header>div {
     display: flex;
 }
@@ -15,12 +17,12 @@ header>div {
 .header {
     font-family: cursive;
     background-color: white;
-    /* background-color: var(--container-color); */
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: var(--z-fixed);
+    z-index: 1;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -70,9 +72,9 @@ a:link {
 
 .home {
     width: 100%;
-    /* display: grid; */
-    padding-top: 5.5rem;
-    column-gap: 4.5rem;
+    display: grid;
+    padding-top: 53px;
+    column-gap: 3.5rem;
     padding-left: 0%;
     padding-right: 0%;
     align-items: center;
@@ -147,11 +149,10 @@ pre {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px #ffffff4d;
+    box-shadow: inset 0 0 0 5px #ffffff4d;
     height: 300px;
-    justify-self: center;
     order: 1;
-    width: 210px;
+    width: 228px;
 }
 
 section {
@@ -187,7 +188,7 @@ section {
     display: grid;
     flex-direction: row-reverse;
     align-items: center;
-    column-gap: 5rem;
+    column-gap: 11rem;
     margin-top: 3rem;
     padding-left: 0%;
     padding-right: 0%;
@@ -224,6 +225,7 @@ section {
     border-radius: 1.25rem;
     padding: 2rem 4rem;
     width: 25rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
 .skills_content span {
@@ -252,12 +254,13 @@ h4 {
 .skills_data {
     font-size: .9rem;
     font-family: sans-serif;
+    display: flex;
+    column-gap: 8px;
 }
 
 .skills_name {
     line-height: 18px;
-    font-size: 1rem;
-
+    font-size: .95rem;
     margin-bottom: 0%;
 }
 
@@ -361,7 +364,9 @@ h4 {
     /* or your desired value */
     position: sticky;
 }
-
+a:hover{
+    color: grey;
+}
 .footer {
     display: flex;
     align-items: center;
@@ -448,12 +453,13 @@ form{
 }
 .contact-form {
     background: #fff;
-    padding: 40px;
+    padding: 24px;
     border-radius: 15px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     text-align: center;
+    margin-top: 1rem;
 }
 .contact-form h2::after {
     content: '';
@@ -514,4 +520,15 @@ form{
 }
 .submit-btn:hover i {
     transform: translateX(5px);
+}
+.scrollup {
+    background-color: rgb(225, 222, 222);
+    border-radius: .4rem;
+    bottom: -20%;
+    opacity: .8;
+    padding: .3rem .5rem;
+    right: -91.5rem;
+    transition: .4s;
+    top: -3rem;
+    height: 3rem;
 }
