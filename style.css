@@ -538,7 +538,8 @@ form {
 
 .form-group textarea {
     resize: none;
-    min-height: 150px;
+    /* min-height: 150px; */
+    min-height: 108px;
 }
 
 .submit-btn {
