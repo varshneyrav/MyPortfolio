@@ -88,12 +88,16 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-  
+.proj1{
+  display: none;
+}
   @media screen and (max-width: 768px) {
-      .navbar div:not(:first-child) {
+      .navbar div:not(:first-child){
         display: none;
       }
-
+      .proj1{
+        display: initial;
+      }
       .navbar a.icon {
         float: right;
         display: block;
@@ -123,6 +127,9 @@ img {vertical-align: middle;}
         max-width: 50%;
         padding: 0;
         max-width: 90%;
+        align-items: center;
+        display: flex;
+        justify-content:center;
         align-items: center;
       }
 
@@ -160,8 +167,8 @@ img {vertical-align: middle;}
       .name>div>a {
         display: flex;
         flex-direction: row;
-        font-size: 14px;
-        width: 11rem;
+        font-size: 15px;
+        width: 10rem;
         align-items: center;
         column-gap: .5rem;
       }
@@ -193,7 +200,10 @@ img {vertical-align: middle;}
         display: flex;
         flex-direction: column;
       }
-
+      .contact_card {
+        width: 100%;
+        max-width: 400px;
+      }
       .contact_content {
         width: 80%;
       }
