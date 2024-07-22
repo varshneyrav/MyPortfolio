@@ -344,7 +344,8 @@ img {
 
   .form-group textarea {
     resize: none;
-    min-height: 101px;
+    /* min-height: 101px; */
+    min-height: 93px;
   }
 
   .submit-btn {
