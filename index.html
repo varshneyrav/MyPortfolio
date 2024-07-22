@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@
     <!-- Navbar code -->
     <header class="header">
         <nav class="navbar container navbar-light" id="mynavbar">
-            <div  class="brand">
+            <div class="brand">
                 <h3>Ravi</h3>
             </div>
             <div class="d-flex flex-row justify-content-end nav-links">
@@ -49,10 +50,6 @@
                         <i class="fa fa-link"></i></a>
                 </div>
             </div>
-                <a href="#" class="hamburger" onclick="toggleMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            
         </nav>
     </header>
     <!-- End Navbar code -->
@@ -72,7 +69,7 @@
                     <h1>Ravi Varshney<span style='font-size:80px;'>&#128075;</span></h1>
                     <kbd>------Web Developer</kbd>
                     <p>Hii, I'm a web developer living in Agra,India and I only believe in Smart + Hard Work...</p>
-                    <div>
+                    <div class="btn-scroll">
                         <a class="btn" href="#contact">Say Hello <i class="fa fa-send-o" style="font-size:20px"></i>
                         </a>
 
@@ -303,6 +300,16 @@
                 </div>
             </div>
         </section>
+        <section class="acheivement">
+            <h2 class="acheivment_title">Acheivements</h2>
+            <marquee behavior="scroll" direction="left" onmousedown="this.stop();"
+            onmouseup="this.start();">
+                <img src=".\topper_1.jpg" width="550" height="300" alt="Natural" /> 
+                <img src="topper_2.jpg" width="350" height="300" alt="Natural" /> 
+                <img src="talent_hunt.jpg" width="500" height="300" alt="Natural" /> 
+                <img src="talent_h3.jpg" width="500" height="300" alt="Natural" />
+              </marquee>
+        </section>
         <section class="contact section" id="contact">
             <h2 class="section_title">Get in touch</h2>
             <span class="section_subtitle">Contact Me</span>
@@ -387,8 +394,37 @@
 </body>
 <script>
     function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('show');
-}
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
 </script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
 </html>
