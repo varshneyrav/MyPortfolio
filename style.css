@@ -574,6 +574,9 @@ form {
     font-family: Arial;
     /* padding-bottom: inherit; */
 }
+marquee{
+    padding-top: 3rem;
+}
 /* 
 project.css */
 .proj{
