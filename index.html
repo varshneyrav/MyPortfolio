@@ -15,7 +15,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile_style.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -33,22 +36,27 @@
 <body>
     <!-- Navbar code -->
     <header class="header">
-        <nav class="navbar container navbar-light">
-            <a class="navbar-brand typewriter" href="#">
+        <nav class="navbar container navbar-light" id="mynavbar">
+            <div  class="brand">
                 <h3>Ravi</h3>
-            </a>
-            <div class="d-flex flex-row justify-content-end">
+            </div>
+            <div class="d-flex flex-row justify-content-end nav-links">
                 <div><a href="#home">Home</a></div>
                 <div><a href="#about">About</a></div>
                 <div><a href="#skills">Skills</a></div>
                 <div><a href="#qualification">Qualification</a></div>
                 <div><a href="#contact">Contact</a></div>
                 <div><a href="https://drive.google.com/file/d/19z3A04Vb7Ma0kq6Zrm22fr9qBsTUmoVM/view?usp=drive_link">Resume
-                        <i class="fa fa-link"></i></a></div>
+                        <i class="fa fa-link"></i></a>
+                </div>
             </div>
+                <a href="#" class="hamburger" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            
         </nav>
     </header>
-    <!-- Navbar code -->
+    <!-- End Navbar code -->
     <main>
         <section class="section">
             <div class="container d-flex justify-content-center home" id="home">
@@ -64,13 +72,14 @@
                 <div class="name">
                     <h1>Ravi Varshney<span style='font-size:80px;'>&#128075;</span></h1>
                     <kbd>------Web Developer</kbd>
-                    <pre>Hii, I'm a web developer living in Agra,India and I only<br>believe in Smart + Hard Work...</pre>
-                    <pre><a class="btn" href="#contact">Say Hello  <i class="fa fa-send-o" style="font-size:20px"></i>
-                    </a>
-                    </pre>
-                    <pre><a class="btn" href="#about">Scroll Down  <i class="fa fa-scroll"></i>
-                    </a>
-                </pre>
+                    <p>Hii, I'm a web developer living in Agra,India and I only believe in Smart + Hard Work...</p>
+                    <div>
+                        <a class="btn" href="#contact">Say Hello <i class="fa fa-send-o" style="font-size:20px"></i>
+                        </a>
+
+                        <a class="btn scroll" href="#about">Scroll Down <i class="fa fa-scroll"></i>
+                        </a>
+                    </div>
                 </div>
                 <a target="_blank" href="Ravi_pic.jpg"></a>
                 <div class="myimg"></div>
@@ -317,8 +326,7 @@
                                 class="contact_button" style="color: grey;">Write Me <i
                                     class="bx bx-right-arrow-alt contact_button-icon" style="font-size: 20px;"></i></a>
                         </div>
-                        <div class="contact_card"><i class="fab fa-linkedin-square"
-                                style="font-size: 28px;"></i>
+                        <div class="contact_card"><i class="fab fa-linkedin-square" style="font-size: 28px;"></i>
                             <h3 class="contact_card-title">LinkedIn</h3>
                             <span class="contact_card-data">Ravi Varshney</span>
                             <a href="https://www.linkedin.com/in/ravi-var49/" class="contact_button">Write Me <i
@@ -327,7 +335,7 @@
                     </div>
                 </div>
                 <div class="contact_content">
-                    <h3 class="contact_title" style="padding-bottom: 32px;">Write to Me</h3>
+                    <h3 class="contact_title">Write to Me</h3>
                     <div class="contact-form">
                         <form action="#" method="post">
                             <div class="form-group">
@@ -339,7 +347,7 @@
                             <div class="form-group">
                                 <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                             </div>
-                            <button type="submit" class="submit-    btn">
+                            <button type="submit" class="submit-btn">
                                 Send Message <i class="bx bx-right-arrow-alt"></i>
                             </button>
                         </form>
@@ -378,5 +386,10 @@
     </footer>
     <a href="#home" class="scrollup show-scroll"><i class="uil uil-arrow-up scrollup_icon"></i></a>
 </body>
-
+<script>
+    function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show');
+}
+</script>
 </html>
