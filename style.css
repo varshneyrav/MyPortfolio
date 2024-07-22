@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: arial;
 }
 
 body {
@@ -17,7 +18,7 @@ header>div {
 }
 
 .header {
-    font-family: cursive;
+    font-family: Arial;
     background-color: white;
     left: 0;
     position: fixed;
@@ -94,7 +95,7 @@ main {
 }
 
 .button {
-    font-family: cursive;
+    font-family: Arial;
     background-color: #333;
     height: 4rem;
     border-radius: 1rem;
@@ -113,7 +114,7 @@ main {
 }
 
 .btn {
-    font-family: cursive;
+    font-family: Arial;
     background-color: #fff;
     height: 4rem;
     border-radius: 1rem;
@@ -127,7 +128,11 @@ main {
     display: inline-flex;
     border: 2px solid #222222;
 }
-
+.btn-scroll{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
 .btn:hover {
     color: white;
     background-color: black;
@@ -150,14 +155,14 @@ p {
 
 .myimg {
     background: url(Ravi_pic.jpg);
-    border-radius: 35%;
+    border-radius: 1.5rem;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 5px #ffffff4d;
     height: 300px;
     order: 1;
-    width: 228px;
+    width: 20rem;
 }
 
 section {
@@ -169,7 +174,7 @@ section {
 .section_title,
 .section_subtitle {
     text-align: center;
-    font-family: cursive;
+    font-family: Arial;
 }
 
 .section_subtitle {
@@ -248,7 +253,7 @@ section {
 
 h4 {
     font-weight: 200;
-    font-family: cursive;
+    font-family: Arial;
     font-size: 20px;
 }
 
@@ -562,4 +567,10 @@ form {
     transition: .4s;
     top: -3rem;
     height: 3rem;
+}
+
+.acheivment_title{
+    text-align: center;
+    font-family: Arial;
+    padding-bottom: inherit;
 }
