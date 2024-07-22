@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header>div {
     display: flex;
 }
@@ -23,6 +25,10 @@ header>div {
     width: 100%;
     z-index: 1;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .icon {
+    display: none;
 }
 
 .container {
@@ -59,8 +65,7 @@ main {
     text-decoration: none;
 }
 
-.header a:visited,
-a:link {
+.header a:visited,a:link {
     color: black;
     text-decoration: none;
     text-underline-offset: none;
@@ -137,7 +142,7 @@ kbd {
     width: fit-content;
 }
 
-pre {
+p {
     padding-top: 1.2rem;
     font-size: large;
     color: rgb(100, 122, 122);
@@ -169,6 +174,7 @@ section {
 
 .section_subtitle {
     display: block;
+    color: grey;
 }
 
 .myimg2 {
@@ -364,9 +370,11 @@ h4 {
     /* or your desired value */
     position: sticky;
 }
-a:hover{
+
+a:hover {
     color: grey;
 }
+
 .footer {
     display: flex;
     align-items: center;
@@ -391,7 +399,8 @@ footer a {
     color: black;
     justify-content: center;
 }
-.contact_container{
+
+.contact_container {
     column-gap: 6rem;
     grid-template-columns: repeat(2, 350px);
     align-items: center;
@@ -400,17 +409,21 @@ footer a {
     padding-right: 0%;
     margin-top: 3rem;
 }
-.contact_content{
+
+.contact_content {
     text-align: center;
     font-size: 1rem;
-    
 }
-.contact_title{
+
+.contact_title {
     font-size: 1.3rem;
     padding-bottom: 2rem;
     margin: 0%;
 }
-.contact_card{
+.contact_content>.contact_title{
+    padding-bottom: 1.5rem;
+}
+.contact_card {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -418,28 +431,37 @@ footer a {
     padding: 1rem;
     text-align: center;
 }
-.contact_card-title{
+
+.contact_card-title {
     font-size: var(--small-font-size);
 }
-.contact_card{
+
+.contact_card {
+    width: 21rem;
     background-color: rgb(255, 255, 255);
     border: 1px solid #0000001a;
     border-radius: 1.3rem;
-    width: 20rem;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
-.contact_card-data,.contact_button-icon,.contact_button{
+
+.contact_card-data,
+.contact_button-icon,
+.contact_button {
     color: grey;
 }
-.contact_button{
+
+.contact_button {
     align-items: center;
-    /* color: var(--text-color); */
+    color: grey;
     column-gap: .25rem;
     display: inline-flex;
     font-size: 15px;
     justify-content: center;
 }
-.contact_info{
+.contact_button a.visted,a.link{
+    color: grey;
+}
+.contact_info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -447,20 +469,20 @@ footer a {
     row-gap: 1rem;
 }
 
------------------------------_________________________________-------------------------------------
-form{
+form {
     height: 18rem;
 }
+
 .contact-form {
     background: #fff;
     padding: 24px;
-    border-radius: 15px;
+    border-radius: 1.3rem;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     text-align: center;
-    margin-top: 1rem;
 }
+
 .contact-form h2::after {
     content: '';
     width: 60px;
@@ -470,10 +492,12 @@ form{
     margin: 10px auto 0;
     border-radius: 2px;
 }
+
 .form-group {
     margin-bottom: 20px;
     position: relative;
 }
+
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -484,6 +508,7 @@ form{
     transition: 0.3s;
     background: rgb(255, 255, 255);
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
@@ -491,10 +516,12 @@ form{
     background: #fff;
     box-shadow: 0 0 10px rgba(60, 60, 60, 0.2);
 }
+
 .form-group textarea {
     resize: none;
     min-height: 150px;
 }
+
 .submit-btn {
     background: #fff;
     color: black;
@@ -508,19 +535,23 @@ form{
     align-items: center;
     justify-content: center;
 }
+
 .submit-btn:hover {
     background: black;
     color: #fff;
     transform: translateY(-3px);
 }
+
 .submit-btn i {
     margin-left: 10px;
     font-size: 20px;
     transition: transform 0.3s;
 }
+
 .submit-btn:hover i {
     transform: translateX(5px);
 }
+
 .scrollup {
     background-color: rgb(225, 222, 222);
     border-radius: .4rem;
