@@ -163,8 +163,8 @@ p {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 5px #ffffff4d;
-    height: 300px;
+    box-shadow:0 15px 15px rgba(0, 0, 0, 0.3);
+    height: 321px;
     order: 1;
     width: 20rem;
 }
@@ -192,8 +192,9 @@ section {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 5px #ffffff4d;
-    height: 23rem;
+    /* box-shadow: inset 0 0 0 5px #ffffff4d; */
+    box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);
+    height: 26rem;
     justify-self: center;
     order: 1;
     width: 20rem;
@@ -389,7 +390,7 @@ a:hover {
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    padding-bottom: 2rem;
+    /* padding-bottom:  2rem; */
 }
 
 .footer div {
@@ -485,6 +486,7 @@ a.link {
 
 form {
     height: 18rem;
+    /* height: 23rem; */
 }
 
 .contact-form {
@@ -542,7 +544,7 @@ form {
     min-height: 108px;
 }
 
-.submit-btn {
+.submit-btn{
     background: #fff;
     color: black;
     border-radius: 1rem;
@@ -555,7 +557,18 @@ form {
     align-items: center;
     justify-content: center;
 }
-
+.submit-btn-s{
+    margin: 2%;
+    background: #fff;
+    color: black;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .submit-btn:hover {
     background: black;
     color: #fff;
@@ -567,9 +580,18 @@ form {
     font-size: 20px;
     transition: transform 0.3s;
 }
-
-.submit-btn:hover i {
+.submit-btn-s:hover {
+    background: white;
+    color: black;
+    transform: translateY(3px);
+}  
+.submit-btn-s:hover i {
     transform: translateX(5px);
+} 
+ .submit-btn-s i {
+    /* margin-left: 5px; */
+    font-size: 20px;
+    transition: transform 0.3s;
 }
 
 .scrollup {
@@ -598,6 +620,9 @@ marquee {
 project.css */
 .proj {
     border: 1px solid #0000001a;
+    box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 1.25rem;
+    padding: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
