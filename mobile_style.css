@@ -207,6 +207,7 @@ img {
   }
 
   kbd {
+    font-size: medium;
     max-width: 106%;
   }
 
@@ -242,7 +243,7 @@ img {
   }
 
   .contact_content {
-    width: 80%;
+    width:66%;
   }
 
   .skills_container {
@@ -314,7 +315,7 @@ img {
   }
 
   .section_subtitle {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .contact_title {
@@ -336,6 +337,9 @@ img {
     font-style: bold;
   }
 
+  form{
+    height: auto;
+  }
   .form-group input,
   .form-group textarea {
     padding: 10px;
@@ -345,7 +349,7 @@ img {
   .form-group textarea {
     resize: none;
     /* min-height: 101px; */
-    min-height: 80px;
+    min-height: 93px;
   }
 
   .submit-btn {
@@ -356,5 +360,11 @@ img {
 
   #contact_title {
     margin-top: 0%;
+  }
+  .proj{
+    border: 1px solid #0000001a;
+    box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 1.25rem;
+    padding: 5%;
   }
 }
