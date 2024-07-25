@@ -123,6 +123,9 @@ img {
     font-weight: 400;
   }
 
+  /* .contact-form{
+    width: 21rem;
+  } */
   .navbar div:not(:first-child) {
     display: none;
   }
@@ -238,13 +241,13 @@ img {
   }
 
   .contact_card {
-    width: 100%;
-    max-width: 400px;
+    width: 18rem;
   }
 
   .contact_content {
-    width:66%;
+    width: 18rem;
   }
+
 
   .skills_container {
     align-items: center;
@@ -254,7 +257,15 @@ img {
 
   .skills_content {
     padding: 1rem 2rem;
-    width: 21rem;
+    width: 18rem;
+  }
+
+  .skills_name {
+    font-size: .80rem;
+  }
+
+  .skills_box {
+    column-gap: 2rem;
   }
 
   .skills_content span {
@@ -337,9 +348,10 @@ img {
     font-style: bold;
   }
 
-  form{
+  form {
     height: auto;
   }
+
   .form-group input,
   .form-group textarea {
     padding: 10px;
@@ -361,10 +373,25 @@ img {
   #contact_title {
     margin-top: 0%;
   }
-  .proj{
+
+  .proj {
+    margin: auto;
+    margin-top: 2.5rem;
     border: 1px solid #0000001a;
-    box-shadow:0 20px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
     border-radius: 1.25rem;
     padding: 5%;
+  }
+
+  .proj>h6 {
+    font-size: 15px;
+  }
+
+  .proj>a {
+    cursor: pointer;
+  }
+
+  .proj>p {
+    font-size: 100%;
   }
 }
