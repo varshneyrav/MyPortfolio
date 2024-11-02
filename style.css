@@ -68,7 +68,7 @@ main {
 
 .header a:visited,
 a:link {
-    color: black;
+    color: black !important;
     text-decoration: none;
     text-underline-offset: none;
 }
@@ -152,6 +152,7 @@ kbd {
 }
 
 p {
+    text-align: justify;
     padding-top: 1.2rem;
     font-size: large;
     color: rgb(100, 122, 122);
@@ -466,11 +467,15 @@ footer a {
 
 .contact_button {
     align-items: center;
-    color: grey;
+    color: black !important;
     column-gap: .25rem;
     display: inline-flex;
     font-size: 15px;
     justify-content: center;
+}
+
+.contact_button i {
+    color: black !important;
 }
 
 .contact_button a.visted,
@@ -516,7 +521,6 @@ form {
 }
 
 .form-group {
-    margin-bottom: 20px;
     position: relative;
 }
 
@@ -554,9 +558,6 @@ form {
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s, transform 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .submit-btn-s {
@@ -603,13 +604,35 @@ form {
 .scrollup {
     background-color: rgb(225, 222, 222);
     border-radius: .4rem;
-    bottom: -20%;
     opacity: .8;
     padding: .3rem .5rem;
-    right: -91.5rem;
-    transition: .4s;
-    top: -3rem;
+    top: 50rem;
+    display: flex;
+    width: 3rem;
     height: 3rem;
+    position: fixed;
+    left: 111rem;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+    background-color: #333;
+}
+
+.scrollup i {
+
+    color: white;
+    font-size: 1.5rem;
+}
+
+.scrollup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.show-scroll {
+    opacity: 1;
+    visibility: visible;
 }
 
 .acheivment_title {
@@ -620,10 +643,11 @@ form {
 
 marquee {
     padding-top: 3rem;
+    overflow: hidden;
+    margin: 2% 10% 0;
 }
 
-/* 
-project.css */
+/*  project.css  */
 .proj {
     border: 1px solid #0000001a;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
