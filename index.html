@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/x-icon" href="r.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -97,7 +97,8 @@
                         creating user-friendly and visually appealing web pages. Though a fresher in professional
                         experience, I have developed several recent projects showcasing my skills. I am dedicated to
                         delivering clean, efficient code and staying updated with industry trends.</p>
-                    <pre><a href="./RaviResume.pdf" download class="button btn" >Download CV  <i class="fa fa-download" style="font-size:20px"></i>
+                    <pre>
+                        <a href="./RaviResume.pdf" download class="button btn" >Download CV  <i class="fa fa-download" style="font-size:20px"></i>
                     </a>
                     </pre>
                 </div>
@@ -401,7 +402,9 @@
             Developed by Ravi Varshney <i class="fa fa-heart" style="font-size:20px; color: red;"></i>
         </div>
     </footer>
-    <a href="#home" class="scrollup show-scroll"><i class="uil uil-arrow-up scrollup_icon"></i></a>
+    <div class="scrollup scrollup2 show-scroll">
+        <a href="#home" ><i class="uil uil-arrow-up scrollup_icon"></i></a>
+    </div>
 </body>
 <script>
     function toggleMenu() {
@@ -440,16 +443,17 @@
 
 <!-- // Select the scroll up button -->
 <script>
-const scrollUpButton = document.querySelector('.scrollup');
+    const scrollUpButton = document.querySelector('.scrollup2');
 
-// Add a scroll event listener to the window
-window.addEventListener('scroll', () => {
-  // Check the scroll position
-  if (window.scrollY > 100) { // Adjust 200 to whatever value you need
-    scrollUpButton.classList.add('show-scroll');
-  } else {
-    scrollUpButton.classList.remove('show-scroll');
-  }
-});
+    // Add a scroll event listener to the window
+    window.addEventListener('scroll', () => {
+        // Check the scroll position
+        if (window.scrollY > 200) { // Adjust 200 to whatever value you need
+            scrollUpButton.classList.add('show-scroll');
+        } else {
+            scrollUpButton.classList.remove('show-scroll');
+        }
+    });
 </script>
+
 </html>
