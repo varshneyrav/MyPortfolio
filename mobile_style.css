@@ -211,7 +211,7 @@ img {
 
   kbd {
     font-size: medium;
-    max-width: 106%;
+    /* max-width: 106%; */
   }
 
   .home {
