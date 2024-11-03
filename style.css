@@ -72,7 +72,9 @@ a:link {
     text-decoration: none;
     text-underline-offset: none;
 }
-
+/* .about_data .btn:link{
+    color: black !important;
+} */
 .header a:hover {
     text-decoration: none;
 }
@@ -138,7 +140,7 @@ a:link {
 }
 
 .btn:hover {
-    color: white;
+    color: white !important;
     background-color: black;
 }
 
@@ -208,13 +210,13 @@ section {
     flex-direction: row-reverse;
     align-items: center;
     column-gap: 11rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     padding-left: 0%;
     padding-right: 0%;
 }
 
 .about_data {
-    width: 20rem;
+    width: 25rem;
 }
 
 .skills {
@@ -552,12 +554,12 @@ form {
 .submit-btn {
     background: #fff;
     color: black;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 15px 30px;
-    border-radius: 30px;
-    cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .submit-btn-s {
@@ -576,7 +578,7 @@ form {
 .submit-btn:hover {
     background: black;
     color: #fff;
-    transform: translateY(-3px);
+    border: none;
 }
 
 .submit-btn i {
@@ -624,21 +626,20 @@ form {
     font-size: 1.5rem;
 }
 
-.scrollup {
+.scrollup2 {
     opacity: 0;
-    visibility: hidden;
+    display: hidden;
     transition: opacity 0.3s, visibility 0.3s;
 }
 
 .show-scroll {
     opacity: 1;
-    visibility: visible;
+    display: flex;
 }
 
 .acheivment_title {
     text-align: center;
     font-family: Arial;
-    /* padding-bottom: inherit; */
 }
 
 marquee {
