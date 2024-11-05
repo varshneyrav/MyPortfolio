@@ -17,7 +17,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="new_style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile_style.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -351,7 +351,7 @@
                 <div class="contact_content">
                     <h3 class="contact_title" id="contact_title">Write to Me</h3>
                     <div class="contact-form">
-                        <form action="#" method="post">
+                        <form onsubmit="emailSend(); reset(); return false;" id="contactForm">
                             <pre style="color: red;font-weight: 600;">Still not working*</pre>
                             <div class="form-group">
                                 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -403,7 +403,7 @@
         </div>
     </footer>
     <div class="scrollup scrollup2 show-scroll">
-        <a href="#home" ><i class="uil uil-arrow-up scrollup_icon"></i></a>
+        <a href="#"><i class="uil uil-arrow-up scrollup_icon"></i></a>
     </div>
 </body>
 <script>
@@ -412,46 +412,19 @@
         navLinks.classList.toggle('show');
     }
 </script>
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-</script>
-
 <!-- // Select the scroll up button -->
 <script>
-    const scrollUpButton = document.querySelector('.scrollup2');
-
+    const scrollUpButton = document.querySelector('.scrollup');
+    const home = document.getElementById('home');
     // Add a scroll event listener to the window
     window.addEventListener('scroll', () => {
-        // Check the scroll position
-        if (window.scrollY > 200) { // Adjust 200 to whatever value you need
-            scrollUpButton.classList.add('show-scroll');
-        } else {
-            scrollUpButton.classList.remove('show-scroll');
+        const homeBottom = home.getBoundingClientRect().bottom;
+        // Show or hide the button based on hero section visibility
+        if (homeBottom <= 0) {
+            scrollUpButton.style.display = 'flex'; // Show button when scrolled past home
+        }
+        else {
+            scrollUpButton.style.display = 'none'; // Hide button when in home section
         }
     });
 </script>
