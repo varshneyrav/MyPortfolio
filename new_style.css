@@ -8,6 +8,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+pre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
 
 header>div {
     display: flex;
