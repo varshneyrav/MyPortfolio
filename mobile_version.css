@@ -385,11 +385,10 @@ h2 {
   }
 
   pre {
+    display: contents;
     margin-top: 0;
     margin-bottom: 0rem;
     overflow: auto;
-    display: contents;
-}
   }
 
   .btn {
