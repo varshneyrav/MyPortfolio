@@ -71,6 +71,7 @@ a:link {
     text-decoration: none;
     text-underline-offset: none;
 }
+
 /* .about_data .btn:link{
     color: black !important;
 } */
@@ -243,7 +244,7 @@ section {
     background-color: rgb(255, 255, 255);
     border: 1px solid #0000001a;
     border-radius: 1.25rem;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     width: 25rem;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
@@ -619,7 +620,7 @@ form {
 .show-scroll {
     opacity: 1;
     display: flex;
-} 
+}
 
 .acheivment_title {
     text-align: center;
